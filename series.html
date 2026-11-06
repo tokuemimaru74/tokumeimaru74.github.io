@@ -21,7 +21,7 @@
       text-align: center;
     }
     .channel-banner {
-      display: black;
+      display: block;
       width: 100%;
       max-width: 1920px;
       height: auto;
@@ -77,23 +77,10 @@
     #community .button {
       background: #5865F2;
     }
-/*スマートフォン向けの表示調整 
-.video {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  margin: 18px 0;
-}
 
-.video iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 10px;
-}
-*/
+
+/* スマートフォン向けの表示調整 */
 @media (max-width: 600px) {
-
   nav {
     padding: 12px 8px;
   }
@@ -103,23 +90,36 @@
     font-size: 13px;
     margin: 5px 6px;
   }
-  
+
   main {
-    margin: 20px;
+    margin: 18px auto;
+    padding: 0 12px;
+  }
+
+  section {
+    padding: 20px;
     margin-bottom: 16px;
   }
-  
+
   h2 {
+    font-size: 23px;
+  }
+
+  h3 {
+    font-size: 19px;
+  }
+
+  section p {
     font-size: 15px;
     line-height: 1.8;
   }
+
   .button {
     font-size: 15px;
     padding: 10px 16px;
   }
 }
 
-    
 .video {
   width: 100%;
   max-width: 700px;
